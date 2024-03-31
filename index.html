@@ -35,9 +35,7 @@
 
         .card-body
         {
-          
           margin: 15px;
-         
         }
         .product-info
         {
@@ -79,41 +77,37 @@
     </style>
 </head>
 <body>
-    <div class="product-card">
+  <div class="product-card">
       <img class="product-img" src="./img/earbuds-removebg-preview.png" >
 
-<div class="card-body">
-
- <p class="product-info">Amazon Basics True Wireless in-Ear Earbuds with Mic, 10MM Dual Drivers, Up to 55ms Low Latency, IPX5 Sweat & Water</p>
-
-<span class="price">₹<b style="font-size: 22px;">799</b>
-    <span style="color: rgb(88, 82, 82);"> M.R.P: <del>₹3,049 </del></span>
-    (74% off)
-</span>
-<p id="show-quantity">1 x 799</p>
-<p id="show-total"> Total = 799</p>
+    <div class="card-body">
+    <p class="product-info">Amazon Basics True Wireless in-Ear Earbuds with Mic, 10MM Dual Drivers, Up to 55ms Low Latency, IPX5 Sweat & Water</p>
+    <span class="price">₹<b style="font-size: 22px;">799</b>
+      <span style="color: rgb(88, 82, 82);"> M.R.P: <del>₹3,049 </del></span>(74% off)
+    </span>
+    <p id="show-quantity">1 x 799</p>
+    <p id="show-total"> Total = 799</p>
 
 
-<div class="btn-container">
-  <img src="./img/remove.png" class="btn-quantity" onclick="dec()">
+    <div class="btn-container">
+      <img src="./img/remove.png" class="btn-quantity" onclick="dec()">
+      <span class="quantity-text" id="quantity-text">1</span>
+      <img src="./img/add.png" class="btn-quantity" onclick="inc()"><br>
+      <button class="btn"  type="button">Buy Now</button>
+    </div>
 
-  <span class="quantity-text" id="quantity-text">1</span>
-
-  <img src="./img/add.png" class="btn-quantity" onclick="inc()">
-
-  <br>
-  <button class="btn"  type="button">Buy Now</button>
-</div>
 </div>
 </div>
 
 <script>
-  function inc()
-  {
+
     const quantityText = document.getElementById("quantity-text");
     const showQuantity = document.getElementById("show-quantity");
     const showTotal = document.getElementById("show-total");
 
+  function inc()
+  {
+   
     let quantity = parseInt(quantityText.innerText);
 
     if(quantity < 5)
@@ -130,10 +124,6 @@
 
   function dec()
   {
-    const quantityText = document.getElementById("quantity-text");
-    const showQuantity = document.getElementById("show-quantity");
-    const showTotal = document.getElementById("show-total");
-
     let quantity = parseInt(quantityText.innerText);
 
     if(quantity > 1)
