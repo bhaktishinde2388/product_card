@@ -47,7 +47,9 @@
 
         .btn-container
         {
-
+         display: flex;
+         justify-content: center;
+         align-items: center;
         }
 
         .btn-quantity
@@ -59,7 +61,7 @@
 
         .btn
         {
-          height: 30px;
+          height: 35px;
           width: 100px;
           border: 1px sold black;
           border-radius: 15%; 
@@ -70,7 +72,8 @@
 
         .quantity-text
         {
-          font-size: 30px;
+          font-size: 25px;
+          margin-top: 17px;
         
         }
     </style>
@@ -144,9 +147,7 @@
     showQuantity.innerText = `${quantity} x 799`
     showTotal.innerText = `Total:${quantity * 799}`
   }
-
-  
-    
+   
 </script>
 
 
