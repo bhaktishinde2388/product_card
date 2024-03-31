@@ -8,12 +8,91 @@
         body
         {
           background-color: #f5f5f0  
+
+        }
+        
+        .product-card
+        {
+          height:550px;
+          width: 300px;
+          border: 1px solid gray;
+          border-radius: 5%;
+          display: block;
+          margin:0 auto;
+          background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+          
+        }
+
+        .product-img
+        {
+          height:250px;
+          width: 300px;
+          display: block;
+          margin:0 auto;
+          margin-top: 10px;
+          border-radius: 5%;
+        }
+        .product-info
+        {
+          text-align: justify;
+          margin: 15px;
+          font-size: 17px;
+        }
+
+        .btn-container
+        {
+
+        }
+
+        .btn-quantity
+        {
+          height: 40px;
+          
+          margin:0 auto;
+        }
+
+        .btn
+        {
+          height: 30px;
+          border-radius: 10px;
+          
+          margin:0 auto;
+          border-radius: 5%; display: block;
+          margin:0 auto;
+
+        }
+
+        .quantity-text
+        {
+          font-size: 17px;
         }
     </style>
 </head>
 <body>
     <div class="product-card">
-    <img class="product-img" src="watch.jpg" >
+      <img class="product-img" src="earbuds-removebg-preview.png" >
+
+<div class="card-body">
+
+ <p class="product-info">Amazon Basics True Wireless in-Ear Earbuds with Mic, 10MM Dual Drivers, Up to 55ms Low Latency, IPX5 Sweat & Water<br>
+    <p style="color: rgb(88, 82, 82);">Colour:Black</p>  
+</p>
+
+<span class="price">₹<b style="font-size: 30px;">799</b>
+    <span style="color: rgb(88, 82, 82);"> M.R.P: <del>₹3,049 </del></span>
+    (74% off)
+</span>
+<div class="btn-container">
+  <img src="remove.png" class="btn-quantity">
+  <span class="quantity-text">1</span>
+  <img src="add.png" class="btn-quantity">
+
+  <br>
+  <button class="btn" type="button">Buy Now</button>
+  
+</div>
+</div>
+
 </div>
 </body>
 </html>
